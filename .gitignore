@@ -1,5 +1,20 @@
+# Database
 *.db
 data/
-.ipynb_checkpoints/
+
+# Python
 __pycache__/
 *.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.env
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
