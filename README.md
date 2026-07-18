@@ -102,7 +102,8 @@ python main.py
 
 ## 📸 Screenshots
 
-Add screenshots of the application here.
+[Add screenshots of the application here.](https://drive.google.com/drive/folders/1RA1ae-0YoPmpseJFycBWYtHGBChV-SX5?usp=drive_link)
+
 
 Example:
 
