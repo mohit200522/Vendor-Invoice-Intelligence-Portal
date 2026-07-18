@@ -1,91 +1,62 @@
-# Vendor Prediction System
+# 📦 Inventory Management System
 
-A Machine Learning project that predicts vendor-related outcomes using a trained classification model. The project includes data preprocessing, model training, model evaluation, and prediction on new data.
+A desktop-based **Inventory Management System** built with **Python** and **SQLite** to efficiently manage products, inventory, suppliers, and stock records. The application provides an easy-to-use interface for inventory tracking and management.
 
 ---
 
-# Project Structure
+## ✨ Features
+
+* Add, update, and delete products
+* Manage inventory records
+* Store data using SQLite
+* User-friendly interface
+* Fast product search
+* Inventory tracking
+* Easy database backup and restoration
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python 3**
+* **SQLite**
+* **Tkinter** (GUI)
+* **Joblib** (if used)
+* **Pillow** (if used)
+
+---
+
+## 📂 Project Structure
 
 ```text
-Vendor_Prediction_Project/
+Inventory-Management-System/
 │
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── models/
-│   └── model.pkl
-│
-├── notebooks/
-│   └── EDA.ipynb
-│
-├── src/
-│   ├── data_preprocessing.py
-│   ├── train_model.py
-│   ├── predict.py
-│   └── utils.py
-│
+├── assets/
+├── images/
+├── inventory.db
+├── main.py
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+└── ...
 ```
 
 ---
 
-# Features
+## 🚀 Installation
 
-* Data preprocessing and cleaning
-* Feature engineering
-* Machine Learning model training
-* Model evaluation
-* Save trained model using Joblib
-* Predict results for new input data
-* Modular and reusable code structure
-
----
-
-# Technologies Used
-
-* Python 3.x
-* Pandas
-* NumPy
-* Scikit-learn
-* Joblib
-* Matplotlib
-* Seaborn
-
----
-
-# Installation
-
-Clone the repository:
+### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd Vendor_Prediction_Project
+git clone https://github.com/<your-username>/<repository-name>.git
 ```
 
-Create a virtual environment (optional but recommended):
+### 2. Move into the project folder
 
 ```bash
-python -m venv venv
+cd <repository-name>
 ```
 
-Activate it
-
-Windows
-
-```bash
-venv\Scripts\activate
-```
-
-Linux/Mac
-
-```bash
-source venv/bin/activate
-```
-
-Install dependencies
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -93,122 +64,61 @@ pip install -r requirements.txt
 
 ---
 
-# Dataset
+## 🗄️ Database Setup
 
-Place the dataset inside the appropriate data folder.
+The SQLite database (`inventory.db`) is **not included** in this repository.
+
+Download it from the Google Drive folder below:
+
+**📁 Database Download**
+
+https://drive.google.com/drive/folders/1XNl9L46MVkCM3BzMC0Jn2MmBju_A5DRm?usp=drive_link
+
+After downloading:
+
+1. Extract the files (if compressed).
+2. Copy **inventory.db** into the project's root directory.
+
+Your project structure should look like:
+
+```text
+Inventory-Management-System/
+│
+├── inventory.db
+├── main.py
+├── README.md
+└── ...
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
+python main.py
+```
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of the application here.
 
 Example:
 
 ```
-data/raw/vendor_data.csv
+screenshots/
+├── login.png
+├── dashboard.png
+├── products.png
+└── suppliers.png
 ```
 
 ---
 
-# Running the Project
+## 📋 Requirements
 
-## Step 1: Data Preprocessing
-
-```bash
-python src/data_preprocessing.py
-```
-
----
-
-## Step 2: Train the Model
-
-```bash
-python src/train_model.py
-```
-
-The trained model will be saved inside the **models/** folder.
-
----
-
-## Step 3: Make Predictions
-
-```bash
-python src/predict.py
-```
-
----
-
-# Model Workflow
-
-```
-Dataset
-    │
-    ▼
-Data Cleaning
-    │
-    ▼
-Feature Engineering
-    │
-    ▼
-Train/Test Split
-    │
-    ▼
-Model Training
-    │
-    ▼
-Model Evaluation
-    │
-    ▼
-Save Model (.pkl)
-    │
-    ▼
-Prediction
-```
-
----
-
-# Evaluation Metrics
-
-Depending on the model, the following metrics can be used:
-
-* Accuracy
-* Precision
-* Recall
-* F1 Score
-* Confusion Matrix
-* ROC-AUC (if applicable)
-
----
-
-# Example Prediction
-
-Input
-
-```python
-sample = {
-    "feature1": value1,
-    "feature2": value2,
-    "feature3": value3
-}
-```
-
-Output
-
-```
-Predicted Vendor Class: Approved
-```
-
-*(Replace the sample features with your project's actual input columns.)*
-
----
-
-# Requirements
-
-```
-pandas
-numpy
-scikit-learn
-joblib
-matplotlib
-seaborn
-```
-
-or install using
+Install all required packages using:
 
 ```bash
 pip install -r requirements.txt
@@ -216,22 +126,27 @@ pip install -r requirements.txt
 
 ---
 
-# Future Improvements
+## 🤝 Contributing
 
-* Flask/FastAPI web application
-* Streamlit dashboard
-* Hyperparameter tuning
-* Cross-validation
-* Model explainability (SHAP/LIME)
-* Docker deployment
-* CI/CD integration
+Contributions, suggestions, and bug reports are welcome.
+
+1. Fork the repository.
+2. Create a new branch.
+3. Commit your changes.
+4. Open a Pull Request.
 
 ---
 
-# Author
+## 👨‍💻 Author
 
 **Mohit Vishwakarma**
 
 B.Tech Information Technology (AI & ML)
 
-Machine Learning | Data Science | Python | SQL
+Python • SQL • Machine Learning • Data Analytics
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a **⭐ Star** on GitHub.
